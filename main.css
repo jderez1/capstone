@@ -11,6 +11,7 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* navbar */
 li {
     list-style: none;
 }
@@ -76,3 +77,33 @@ a {
     cursor: pointer;
     border-radius: 5px;
 }
+/* navbar */
+
+/* main */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 100px;
+    margin-top: -200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+.container img {
+    width: 1000px;
+    height: auto;
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+
+
+
