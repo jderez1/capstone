@@ -1,5 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +80,11 @@
 
 body {
     background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Roboto;
+}
+
+main {
+    margin: 0 100px;
 }
 
 .header {
@@ -48,13 +124,13 @@ li {
 }
 
 .header .header-nav ul li a:hover {
-    color: orange;
+    color: #16F38B;
 }
 
 .header .header-cta {
     display: inline-block;
     color: white;
-    background-color: orange;
+    background-color: #16F38B;
     font-weight: 500;
     text-decoration: none;
     padding: 10px 35px;
@@ -62,13 +138,109 @@ li {
 
 .header .header-cta:hover {
     display: inline-block;
-    background-color: darkorange;
+    background-color: #16F38B;
 }
+
+.image-container {
+    position: relative;
+    width: 700px;
+    height: auto;
+    margin: 0px auto;
+  }
+  
+  .image-container img {
+    width: 700px;
+    height: auto;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    padding: 10px 20px; 
+    font-size: 100px; 
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .quote {
+    padding-top: 150px;
+    line-height: 40px;
+    padding-bottom: 60px;
+  }
+
+  .color-block {
+    background-color: #352EF2;
+    padding: 30px;
+    color: white;
+    line-height: 25px;
+    font-family: Roboto;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  .color-block h2 {
+    padding-bottom: 45px;
+    font-size: 40px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    padding-bottom: 100px;
+    padding-top: 40px;
+  }
+
+  .row-cards {
+    margin: 0px -5px;
+  }
+
+  .row-cards:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: aliceblue;
+    height: 270px;
+  }
+
+  .card h3 {
+    padding-bottom: 30px;
+    color: #352EF2;
+  }
+
+  .footer {
+    height: 50px;
+    background-color: #352EF2;
+    font-family: Roboto;
+  }
+
+  .footer p {
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+
+
 
 /* mobiel */
 @media (max-width:576px) {
+    main {
+        margin: 0 auto;
+    } 
+
     .header {
-        background-color: lightblue;
+        background-color: rgb(224, 247, 255);
     }
 
     .header .row {
@@ -85,10 +257,62 @@ li {
     li {
         padding: 5px;
     }
+
+    .image-container {
+        position: relative;
+        width: 400px;
+        height: auto;
+        margin: 0px auto;
+        padding-top: 20px;
+      }
+      
+      .image-container img {
+        width: 400px;
+        height: auto;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: black; 
+        padding: 10px 20px; 
+        font-size: 60px; 
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+    
+      .quote {
+        padding-top: 150px;
+        line-height: 30px;
+        font-size: 15px;
+        margin: 0 40px;
+      }
+
+      .color-block {
+        margin: 0 40px;
+      }
+
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        padding-bottom: 0px;
+      }
+
+      .card {
+        height: 230px;
+        margin: 0 40px;
+      } 
 }
 
 /* tablet */ 
 @media (max-width:767px) {
+    main {
+        margin: 0 auto;
+    } 
+
     .header .row {
         flex-direction: column;
     }
@@ -103,4 +327,49 @@ li {
     li {
         padding: 5px;
     }
+
+    .image-container {
+        position: relative;
+        width: 400px;
+        height: auto;
+        margin: 0px auto;
+        padding-top: 20px;
+      }
+      
+      .image-container img {
+        width: 400px;
+        height: auto;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: black; 
+        padding: 10px 20px; 
+        font-size: 60px; 
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      .quote {
+        margin: 0 40px;
+      }
+
+      .color-block {
+        margin: 0 40px;
+      }
+
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        padding-bottom: 0px;
+      }
+
+      .card {
+        height: 170px;
+        margin: 0 40px;
+      } 
 }
