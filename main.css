@@ -78,6 +78,11 @@
     box-sizing: border-box;
 }
 
+p {
+    line-height: 25px;
+    font-family: Roboto;
+}
+
 body {
     background-color: white;
     font-family: Roboto;
@@ -167,8 +172,13 @@ li {
 
   .quote {
     padding-top: 150px;
-    line-height: 40px;
-    padding-bottom: 60px;
+    line-height: 50px;
+    padding-bottom: 100px;
+  }
+
+  .quote h2 {
+    color: rgb(23, 23, 23);
+    font-size: 30px;
   }
 
   .color-block {
@@ -178,46 +188,58 @@ li {
     line-height: 25px;
     font-family: Roboto;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    border-radius: 10px;
   }
 
   .color-block h2 {
-    padding-bottom: 45px;
-    font-size: 40px;
+    color: white;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .title-middle h2 {
+    text-align: center;
+  } 
+
+  .row-cards {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 25px 25px;
+    margin-bottom: 100px;
   }
 
   .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    padding-bottom: 100px;
-    padding-top: 40px;
-  }
-
-  .row-cards {
-    margin: 0px -5px;
-  }
-
-  .row-cards:after {
-    content: "";
-    display: table;
-    clear: both;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background: #EAF9FF;
   }
 
   .card {
-    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: aliceblue;
-    height: 270px;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
 
   .card h3 {
-    padding-bottom: 30px;
+    font-family: Roboto;
+    font-weight: 800;
     color: #352EF2;
-  }
+    margin: 0;  
+    padding-bottom: 15px;
+    font-size: 1.3em;
+}
+
+  .card p {
+    padding-bottom: 10px;
+    flex: 1;
+}
 
   .footer {
     height: 50px;
@@ -243,11 +265,8 @@ li {
   }
 
   .color-block-light h2 {
-    color: #352EF2;
     padding-bottom: 45px;
-    font-size: 40px;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
   .container {
@@ -268,11 +287,44 @@ li {
     padding-left: 40px;
   }
 
+  .doubting-image img {
+    width: 400px;
+    height: auto;
+  }
+
+  .doubting-text {
+    padding-left: 40px;
+  }
+
   h1 {
     font-size: 100px;
     color: #16F38B;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+
+  h2 {
+    font-size: 45px;
+    padding-bottom: 20px;
+    color: #352EF2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+button {
+    background-color: #16F38B;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+
+
 
 
 
@@ -336,18 +388,6 @@ li {
       .color-block {
         margin: 0 40px;
       }
-
-      .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        padding-bottom: 0px;
-      }
-
-      .card {
-        height: 230px;
-        margin: 0 40px;
-      } 
 
       .color-block-light {
         margin: 0 40px;
@@ -434,16 +474,4 @@ li {
       .color-block {
         margin: 0 40px;
       }
-
-      .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        padding-bottom: 0px;
-      }
-
-      .card {
-        height: 170px;
-        margin: 0 40px;
-      } 
 }
