@@ -151,6 +151,7 @@ li {
     width: 700px;
     height: auto;
     margin: 0px auto;
+    padding-bottom: 100px;
   }
   
   .image-container img {
@@ -171,7 +172,6 @@ li {
   }
 
   .quote {
-    padding-top: 150px;
     line-height: 50px;
     padding-bottom: 100px;
   }
@@ -262,6 +262,7 @@ li {
     font-weight: 300;
     margin-bottom: 30px;
     margin-top: 70px;
+    border-radius: 20px;
   }
 
   .color-block-light h2 {
@@ -290,6 +291,7 @@ li {
   .doubting-image img {
     width: 400px;
     height: auto;
+    border-radius: 20px;
   }
 
   .doubting-text {
@@ -324,7 +326,50 @@ button {
 }
 
 
+.logo-div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+}
 
+.logo-div img {
+  width: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 100px;
+}
+
+.fonts {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+
+.futura {
+  padding-right: 100px;
+}
+
+.colors img {
+  width: 90%;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.progress img {
+  width: 400px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
 
 
 
