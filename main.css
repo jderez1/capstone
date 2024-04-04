@@ -424,7 +424,7 @@ button {
       }
     
       .quote {
-        padding-top: 150px;
+        padding-top: 20px;
         line-height: 30px;
         font-size: 15px;
         margin: 0 40px;
@@ -447,6 +447,16 @@ button {
       .container {
         position: relative;   
         margin: 80 100px; 
+        flex-direction: column;
+      }
+
+      .container h2 {
+        padding-top: 40px;
+      }
+
+      .container img {
+        width: 80%;
+        margin: 0 40px;
       }
 
       .process-image img {
@@ -464,6 +474,36 @@ button {
         font-size: 50px; 
         text-align: center;
       }
+
+      .title-middle {
+        padding-top: 80px;
+      }
+
+      .the-logo-div {
+        margin: 0 40px;
+      }
+
+      .the-logo-div h2 {
+        padding-top: 80px;
+      }
+
+      .logo-div {
+        flex-direction: column;
+      }
+
+      .progress {
+        flex-direction: column;
+      }
+
+      .logo-div .progress img {
+        width: 80%;
+        padding-right: 0px;
+      }
+
+      .colors img {
+        width: 100%;
+      }
+
 }
 
 /* tablet */ 
