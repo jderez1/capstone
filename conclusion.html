@@ -29,7 +29,7 @@
               <li><a href="conclusion.html">Conclusion</a></li>
             </ul>
           </nav>
-          <a href="#" class="header-cta">Links</a>
+          <a href="links.html" class="header-cta">Links</a>
         </div>
       </div>
     </header>
@@ -39,5 +39,28 @@
         <h2>What's next?</h2>
         <p>PickPal represents the culmination of extensive research, thoughtful design, and meticulous development aimed at addressing the challenges inherent in the e-commerce landscape. By offering a solution that streamlines product discovery, reduces decision fatigue, and enhances the overall shopping experience, PickPal has the potential to revolutionize how online retailers engage with their customers and drive conversions. As we move forward, I am excited to continue refining and expanding PickPal's capabilities, working closely with industry experts and stakeholders to ensure its success in the dynamic world of e-commerce. Thank you for joining me on this journey, and I look forward to the continued evolution of PickPal as a trusted ally for businesses and consumers alike.</p>
     </div>    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
   </body>
 </html>

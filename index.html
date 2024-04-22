@@ -29,7 +29,7 @@
               <li><a href="conclusion.html">Conclusion</a></li>
             </ul>
           </nav>
-          <a href="#" class="header-cta">Links</a>
+          <a href="links.html" class="header-cta">Links</a>
         </div>
       </div>
     </header>
@@ -77,12 +77,42 @@
         </div>
       </div>
     </div>
+    <div class="problem_image">
+      <img src="image/problem.png" alt="problem">
+    </div>
 
     <div class="color-block">
       <h2>The solution</h2>
       <p>The software is a selection aid/ product recommendation quiz to make it easy for their customers to find the right products. This results in more turnover, longer sessions and higher customer satisfaction. I want to make a difference with advanced technology and personal support. The mission is to support and encourage B2C companies in their online sales efforts through innovative guided sales software and personal guidance. I’m committed to reducing customer overwhelm, increasing conversion rates, and providing valuable insights. The mission is to help companies grow and excel in an increasingly digital world, all with a strong emphasis on customer satisfaction and lasting partnerships.</p>
   </div>
+
+  <div class="problem_image">
+    <img src="image/solution.png" alt="problem">
+  </div>
     </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
     <footer>
       <div class="footer">
