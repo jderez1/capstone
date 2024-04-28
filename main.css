@@ -445,6 +445,10 @@ strong {
   background-color: #352EF2;
 }
 
+.roboto {
+  padding-bottom: 80px;
+}
+
 
 /* mobiel */
 @media (max-width:576px) {
