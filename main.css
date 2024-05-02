@@ -449,12 +449,34 @@ strong {
   padding-bottom: 80px;
 }
 
+.space {
+  padding-top: 50px;
+}
 
 /* mobiel */
 @media (max-width:576px) {
     main {
         margin: 0 auto;
     } 
+
+    .doubting-text {
+      margin: 0 40px;
+      padding: 0px;
+    }
+
+    .links_mobile {
+      margin: 0 40px;
+      padding-bottom: 40px;
+    }
+
+    .survey {
+      margin: 0 40px;
+    }
+
+    .main-logo {
+      width: 300px;
+      height: auto;
+    }
 
     .header {
         background-color: rgb(224, 247, 255);
@@ -553,7 +575,7 @@ strong {
       }
 
       .title-middle {
-        padding-top: 80px;
+        padding-top: 0px;
       }
 
       .the-logo-div {
@@ -581,61 +603,169 @@ strong {
         width: 100%;
       }
 
+      .problem_image img {
+        width: 400px;
+      }
+
+      
+
       
 
 }
 
 /* tablet */ 
-@media (max-width:767px) {
-    main {
-        margin: 0 auto;
-    } 
+/* Tablet */
+@media (min-width: 577px) and (max-width: 1024px) {
+  main {
+      margin: 0 auto;
+  } 
 
-    .header .row {
-        flex-direction: column;
+  .doubting-text {
+    margin: 0 40px;
+    padding: 0px;
+  }
+
+  .links_mobile {
+    margin: 0 40px;
+    padding-bottom: 40px;
+  }
+
+  .survey {
+    margin: 0 40px;
+  }
+
+  .main-logo {
+    width: 300px;
+    height: auto;
+  }
+
+  .header {
+      background-color: rgb(224, 247, 255);
+  }
+
+  .header .row {
+      flex-direction: column;
+  }
+
+  .header .header-nav ul {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  li {
+      padding: 5px;
+  }
+
+  .image-container {
+      position: relative;
+      width: 400px;
+      height: auto;
+      margin: 0px auto;
+      padding-top: 20px;
+    }
+    
+    .image-container img {
+      width: 400px;
+      height: auto;
     }
 
-    .header .header-nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .overlay-text {
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      color: black; 
+      padding: 10px 20px; 
+      font-size: 60px; 
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  
+    .quote {
+      padding-top: 20px;
+      line-height: 30px;
+      font-size: 15px;
+      margin: 0 40px;
     }
 
-    li {
-        padding: 5px;
+    .color-block {
+      margin: 0 40px;
     }
 
-    .image-container {
-        position: relative;
-        width: 400px;
-        height: auto;
-        margin: 0px auto;
-        padding-top: 20px;
-      }
-      
-      .image-container img {
-        width: 400px;
-        height: auto;
-      }
+    .color-block-light {
+      margin: 0 40px;
+      line-height: 25px;
+      margin-top: 40px;
+    }
 
-      .overlay-text {
-        position: absolute;
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        color: black; 
-        padding: 10px 20px; 
-        font-size: 60px; 
-        text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      }
+    .color-block-light h2 {
+      line-height: normal;
+    }
 
-      .quote {
-        margin: 0 40px;
-      }
+    .container {
+      position: relative;   
+      margin: 80 100px; 
+      flex-direction: column;
+    }
 
-      .color-block {
-        margin: 0 40px;
-      }
+    .container h2 {
+      padding-top: 40px;
+    }
+
+    .container img {
+      width: 80%;
+      margin: 0 40px;
+    }
+
+    .process-image img {
+      width: 400px;
+      height: auto;
+    }
+
+    .process-text h1 {
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      color: 16F38B; 
+      padding: 10px 20px; 
+      font-size: 50px; 
+      text-align: center;
+    }
+
+    .title-middle {
+      padding-top: 0px;
+    }
+
+    .the-logo-div {
+      margin: 0 40px;
+    }
+
+    .the-logo-div h2 {
+      padding-top: 80px;
+    }
+
+    .logo-div {
+      flex-direction: column;
+    }
+
+    .progress {
+      flex-direction: column;
+    }
+
+    .logo-div .progress img {
+      width: 80%;
+      padding-right: 0px;
+    }
+
+    .colors img {
+      width: 100%;
+    }
+
+    .problem_image img {
+      width: 400px;
+    }
+
 }
